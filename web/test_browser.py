@@ -148,4 +148,4 @@ class TestBrowser():
         filename = self.driver.find_element(By.CSS_SELECTOR, ".ww_fileImporter_fileContainer_fileNames").text
         assert "通讯录批量导入模板.xlsx" == filename
 
-        # self.driver.find_element(By.CSS_SELECTOR,".qui_btn ww_btn ww_btn_Large ww_btn_Blue ww_fileImporter_submit").click
+        self.driver.find_element(By.CSS_SELECTOR, ".ww_fileImporter_submitWrap").click()
